@@ -1,0 +1,22 @@
+{
+  "name": "calculated-garden",
+  "version": "1.0.0",
+  "description": "A site for garden planning in zone 5b or 6a",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekmccann/calculated-garden.git"
+  },
+  "keywords": [
+    "garden"
+  ],
+  "author": "ekmccann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ekmccann/calculated-garden/issues"
+  },
+  "homepage": "https://github.com/ekmccann/calculated-garden#readme"
+}
