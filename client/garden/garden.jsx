@@ -1,5 +1,5 @@
 const React = require('react');
-const _     = require('lodash');
+const _ = require('lodash');
 const CreateRouter = require('pico-router').createRouter;
 
 //Pages
@@ -19,7 +19,7 @@ const Garden = React.createClass({
 	},
 	render: function(){
 		return <div className='garden'>
-			Root
+			Hey katiue
 			<Router initialUrl={this.props.url} />
 		</div>
 	}
