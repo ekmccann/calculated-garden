@@ -24,14 +24,23 @@ const GardenEngine = {
 		return foundVegetable.pairings; 
 	},
 
-	multiInput : (vegetableList)=>{
+	multiPartner : (vegetableList)=>{
 		const repeatVegetable =_.map(vegetableList, (name) =>{
 			return GardenEngine.bestPartner(name);
 		})
 
 		return _.uniq(_.flatten(repeatVegetable))
-	}
+	},
 
+	plantDistance : (vegetable)=>{
+		const foundDistance =_.find(GardenData, (data, name) => {
+			return vegetable == name
+		})
+
+		return foundDistance.area;
+	},
+
+	multiDistance : ()
 }
 
 module.exports = GardenEngine;
