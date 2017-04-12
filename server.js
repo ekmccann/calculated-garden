@@ -7,8 +7,7 @@ const templateFn = require('./client/template.js');
 
 app.get('*', (req, res)=>{
 	return vitreumRender('garden', templateFn, {
-			url : req.originalUrl,
-			gardenData : {}
+			url : req.originalUrl
 		})
 		.then((page) => {
 			return res.send(page)

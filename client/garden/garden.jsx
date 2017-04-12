@@ -14,8 +14,7 @@ const Router = CreateRouter({
 const Garden = React.createClass({
 	getDefaultProps: function() {
 		return {
-			url : '/',
-			gardenData : {}
+			url : '/'
 		};
 	},
 	render: function(){

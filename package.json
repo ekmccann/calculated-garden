@@ -28,8 +28,8 @@
     "express": "^4.15.2",
     "lodash": "^4.17.4",
     "pico-router": "^1.1.1",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0",
     "vitreum": "^4.1.0"
   }
 }
