@@ -1,0 +1,11 @@
+{
+	"assets": ["*.png","*.otf", "*.ico", "*.jpg"],
+	"shared":[],
+	"libs" : [
+		"classnames",
+		"react",
+		"react-dom",
+		"lodash",
+		"pico-router"
+	]
+}
