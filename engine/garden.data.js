@@ -1,23 +1,23 @@
 module.exports = {
     cucumber : {
-        area : 2,
-        family : 'cool guy',
-        pairings : ['mocha', 'second']
+        area : 40,
+        family : 'cucurbit',
+        pairings : ['radish', 'beans']
     },
     carrot : {
-		area : 2,
-        family : 'cool guy',
-        pairings : ['mocha', 'second']
+		area : 1,
+        family : 'root vegetable',
+        pairings : ['lettuce', 'onion']
     },
-    
+
     beet : {
-        area : 2,
-        family : 'cool guy',
-        pairings : ['mocha', 'second']
+        area : 1,
+        family : 'root vegetable',
+        pairings : ['onion', 'lettuce']
     },
     radish : {
-		area : 2,
-        family : 'cool guy',
-        pairings : ['mocha', 'second']
+		area : 1,
+        family : 'root vegetable',
+        pairings : ['lettuce', 'carrot', 'beans']
     }
 }
