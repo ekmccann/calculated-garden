@@ -4,7 +4,11 @@
   "description": "A site for garden planning in zone 5b or 6a",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon tests/garden.test.js"
+    "start": "node server.js",
+    "postinstall": "npm run build",
+    "test": "nodemon tests/garden.test.js",
+    "dev": "node scripts/dev.js",
+    "build": "node scripts/build.js"
   },
   "repository": {
     "type": "git",
@@ -20,9 +24,12 @@
   },
   "homepage": "https://github.com/ekmccann/calculated-garden#readme",
   "dependencies": {
+    "classnames": "^2.2.5",
     "express": "^4.15.2",
     "lodash": "^4.17.4",
     "pico-router": "^1.1.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
     "vitreum": "^4.1.0"
   }
 }
