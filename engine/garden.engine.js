@@ -40,7 +40,13 @@ const GardenEngine = {
 		return foundDistance.area;
 	},
 
-	multiDistance : ()
+	multiDistance : (vegetableList)=>{
+		const repeatDistance =_.map(vegetableList, (name) =>{
+			return GardenEngine.plantDistance(name);
+		})
+
+		return repeatDistance;
+	}
 }
 
 module.exports = GardenEngine;
