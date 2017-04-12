@@ -14,7 +14,7 @@ app.get('*', (req, res)=>{
 			return res.send(page)
 		})
 		.catch((err)=>{
-			return res.json(err);
+			return res.json(err)
 		});
 });
 

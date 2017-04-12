@@ -11,7 +11,7 @@ const Home = React.createClass({
 	},
 	render: function(){
 		return <div className='home'>
-			Home Component Ready.
+			Home Page Ready.
 		</div>
 	}
 });
