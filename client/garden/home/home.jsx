@@ -1,7 +1,9 @@
-
 const React = require('react');
 const _     = require('lodash');
 const cx    = require('classnames');
+
+const GardenEngine = require('../../../engine/garden.engine.js');
+const GardenData = require('../../../engine/garden.data.js');
 
 
 const Home = React.createClass({
@@ -10,16 +12,36 @@ const Home = React.createClass({
 
 		};
 	},
+	getInitialState: function() {
+		return {
+			bestPartner : []
+		};
+	},
 
-	handleChange : function(event){
-		console.log(event.target.value);
+	handleClick : function(vegtable){
+		this.setState({
+			bestPartner : GardenEngine.bestPartner(vegtable)
+		});
+	},
 
-		engine.multipart(event)
+	renderGardenItems : function(){
+		return _.map(GardenData, (data, name)=>{
+			return <div onClick={this.handleClick.bind(null, name)}>{name}</div>
+		})
+	},
+
+	renderBestPartner : function(){
+		return _.map(this.state.bestPartner, (partner)=>{
+			return <div>{partner}</div>
+		})
 	},
 
 	render: function(){
 		return <div className='home'>
+
+			{this.renderGardenItems()}
 			<textarea onChange={this.handleChange} />
+			{this.renderBestPartner()}
 		</div>
 	}
 });
